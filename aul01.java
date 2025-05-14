@@ -4,6 +4,8 @@ public class aul01 {
 
 	public static void main(String[] args) {
 		Scanner tec = new Scanner(System.in);
+		 Produtos produtos = new Produtos();
+		
 		while (true) {
 			System.out.println("Bem-Vindo ao ATACADÃO");
 			System.out.println("Digite 1 Pra fazer login");
@@ -23,9 +25,8 @@ public class aul01 {
 	                Login.FazerLogin(); 
 
 	            } else if (opcao == 2) {
-	               Produtos.MostrarProdutos(formas);
-	               
-
+	            	Produtos.ExibirTodasCategorias(); 
+	            	 
 	            } else if (opcao == 3) {
 	                System.out.println("Processando pagamento...");
 	                
@@ -86,92 +87,49 @@ class Login {
 }
 
 class Produtos {
-	public void MostrarProdutos(String[] lista, String categoria) {
-		System.out.println("\n=== " + categoria + " ===");
-	    for (String item : lista) {
-	        System.out.println("- " + item);
-	}
-			
-	
-	
-	
-	{
-		String[] utensilios  ={
-			"Espátula de Silicone",
-			"tesoura",
-			"ralador",
-			"colher de pau",
-			"funil",
-			"Conjunto de medidores",
-			"Abridor de latas",
-			"Abridor de garrafas",
-			"pinça",
-			"saca-rolhas",
-			"peneira média",
-			"peneira pequena",
-			"xícara de medidas",
-			"Rolo para abrir massas (plástico ou madeira)"
-		};
-		String [] panelas = {
-			"Panela grande",
-			"Panela média",
-			"Panela pequena",
-			"Panela de pressão",
-			"Frigideira média antiderente com tampa",
-			"leitera ou caneca para ferver os liquidos"				
-		};
-		 String[] formas = {
-		            "Forma para pizza", 
-		            "Forma para pizza",
-		            "Forma retangular", 
-		            "Forma redonda", 
-		            "Forma redonda com furo no meio"
-		        };
-	
-			String[] facas = {
-		            "Faca grande para corte de carnes", 
-		            "Faca média", 
-		            "Faca com serra para pães", 
-		            "Faca com ponta fina para legumes"
-		        };
-			String[] acessorios = {
-		            "Tábua de corte de vidro", 
-		            "Concha grande", 
-		            "Concha média", 
-		            "Escumadeira", 
-		            "Garfão para preparo de alimentos, especialmente carnes", 
-		            "Escorredor de macarrão", 
-		            "Formas de gelo ", 
-		            "Pegadores de panela", 
-		            "Pegadores de panela", 
-		            "Luva de silicone", 
-		            "Coador de café", 
-		            "Chaleira"
-		        };
-			 MostrarProdutos(utensilios, "Utensílios de Cozinha");
-		     MostrarProdutos(panelas, "Panelas");
-		     MostrarProdutos(formas, "Formas");
-		     MostrarProdutos(facas, "Facas");
-		     MostrarProdutos(acessorios, "Acessórios");
-		  
-		     
-	
-	
-	}  
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	static String[] utensilios = {
+	        "Espátula de Silicone", "Tesoura", "Ralador", "Colher de Pau", "Funil",
+	        "Conjunto de Medidores", "Abridor de Latas", "Abridor de Garrafas", "Pinça",
+	        "Saca-Rolhas", "Peneira Média", "Peneira Pequena", "Xícara de Medidas",
+	        "Rolo para Massas"
+	    };
 
-}}
+	    static String[] panelas = {
+	        "Panela Grande", "Panela Média", "Panela Pequena", "Panela de Pressão",
+	        "Frigideira Média Antiderente", "Leitera ou Caneca para Líquidos"
+	    };
+
+	    static String[] formas = {
+	        "Forma para Pizza", "Forma Retangular", "Forma Redonda", "Forma Redonda com Furo"
+	    };
+
+	    static String[] facas = {
+	        "Faca Grande para Carnes", "Faca Média", "Faca para Pães", "Faca para Legumes"
+	    };
+
+	    static String[] acessorios = {
+	        "Tábua de Corte de Vidro", "Concha Grande", "Escumadeira", "Garfão", 
+	        "Escorredor de Macarrão", "Formas de Gelo", "Luva de Silicone", "Coador de Café"
+	    };
+	    
+	    public static void exibirProdutos(String[] categoria, String utensilios) {
+	        System.out.println("\n=== " + utensilios + " ===");
+	        for (String produto : categoria) {
+	            System.out.println("- " + produto);
+	        }
+
+	    }
+	    public static void ExibirTodasCategorias() {
+		        exibirProdutos(utensilios, "Utensílios de Cozinha");
+		        exibirProdutos(panelas, "Panelas");
+		        exibirProdutos(formas, "Formas");
+		        exibirProdutos(facas, "Facas");
+		        exibirProdutos(acessorios, "Acessórios");
+			
+		}
+		
+	    
+	
+	
+	
+}
