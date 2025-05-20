@@ -52,22 +52,6 @@ public class Main {
     // double Custo_final = Custo_Fabrica + distribuidor + impostos;
     // System.out.println("O custo final ao consumidor é:" + Custo_final);
   
-      //Questão 04)
-    //   ContaCorrente minhaConta = new ContaCorrente(100.0); 
-    //       minhaConta.depositar(50.0);
-    //       System.out.println("Saldo da conta: " + minhaConta.saldo);
-    //   }
-    // }
-    // class ContaCorrente {
-    //   double saldo;
-    //   public ContaCorrente(double saldoInicial) {
-    //     this.saldo = saldoInicial;
-    //   }
-    //   public void depositar(double valor) {
-    //     if (valor > 0) {
-    //       this.saldo += valor;
-    //     } else {
-    //       System.out.println("Valor inválido para depósito.");
-    //     }
-  
+  }
+}
   
