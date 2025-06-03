@@ -1,0 +1,61 @@
+// import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Scanner;
+// import org.junit.jupiter.api.Test;
+public class Main {
+  public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    //Questão 01)
+    // System.out.println("Escreva seu nome");
+    // String ano = scanner.nextLine();
+
+    // System.out.println("Escreva seu sexo");
+    // String sexo = scanner.nextLine();
+
+    // System.out.println("Escreva seu estado civil");
+    // String EstadoCivil = scanner.nextLine();
+
+    // if (sexo.equals("feminino") && EstadoCivil.equals("casada")) {
+    //   System.out.println("Escreva o tempo de casados");
+    // } else {
+    // }
+    //Questão02)
+//     System.out.println("Escreva o Valor A");
+//     Double valorA = scanner.nextDouble();
+
+//     System.out.println("Escreva o Valor B ");
+//     double valorB = scanner.nextDouble();
+
+//     double valorC;
+
+//     if (valorA == valorB) {
+//       valorC = valorA + valorB;
+// } else {
+//       valorC = valorA * valorB;
+// }
+//     System.out.println("O valor de c é :" + valorC);
+//Questão 03)
+//   System.out.println("Escreva o peso de adulto");
+//   double peso = scanner.nextDouble();
+
+//   System.out.println("Escreva a altura do adulto");
+//   double altura = scanner.nextDouble();
+  
+//   double imc = peso * altura /2;
+//    if (imc == 18.5) {
+//      System.out.println("Abaixo do peso");
+// } else if(imc < 25) {
+//      System.out.println("Peso Normal");
+// }else if (imc < 30) {
+//      System.out.println("acima do peso");
+// } else if (imc > 30){
+//      System.out.println("Obeso");
+// }
+    
+  }
+
+  }
+    
+
+
+
+  
